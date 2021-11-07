@@ -11,7 +11,7 @@ function compute()
     let years = document.getElementById("years").value;
     let interest = principal * years * rate / 100;
     let localDate = new Date();
-    let futureDate = localDate.getFullYear() + Number(years); //using Date() structure to get future year
+    let futureDate = localDate.getFullYear() + Number(years); 
 
     let resultText = document.createElement('resultText');
     resultText.innerHTML = "If you deposit "+ "<mark>" +principal.toString() + "</mark>,<br>"
