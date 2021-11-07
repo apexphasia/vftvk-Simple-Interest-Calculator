@@ -23,11 +23,11 @@ function compute()
     while(result.hasChildNodes()) {
         result.removeChild(result.firstChild);
     }
-    result.appendChild(resultText); //using js to dynamically plug in the resultText
+    result.appendChild(resultText); 
     result.children[0] = resultText;
 }
 
 function displayInterest(val){
     let displayData = document.getElementById("displayData");
-    displayData.innerText = val.toString() + " %" //refresh the changed interest text
+    displayData.innerText = val.toString() + " %"
 }
